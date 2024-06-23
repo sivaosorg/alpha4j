@@ -71,15 +71,9 @@ ng.version=v1.0.0
 implementation files('libs/alpha4j-v1.0.0.jar') // filename based on ng.name and ng.version
 ```
 
-2. Edit file `main Spring Boot application` (optional)
+## Classes
 
-```java
-
-@SpringBootApplication
-@ComponentScan(basePackages = {"org.alpha4j"}) // root name of package alpha4j
-public class ApiApplication {
-    public static void main(String[] args) {
-        SpringApplication.run(ApiApplication.class, args);
-    }
-}
-```
+- `Map4j`
+- `LFUCache4j`
+- `LRUCache`
+- `LRUCache4j`
