@@ -56,11 +56,18 @@ make jar
 
 ### Upgrading version
 
-- file `gradle.properties`
+- file `gradle.yml`
 
-```sh
-ng.name=alpha4j
-ng.version=v1.0.0
+```yaml
+ng:
+  name: alpha4j
+  version: v1.0.0
+  enabled_link: false # enable compression and attachment of the external libraries
+  jars:
+    - enabled: false # enable compression and attachment of the external libraries
+      source: "" # lib Jar
+    - enabled: false
+      source: ""
 ```
 
 ## Integration
